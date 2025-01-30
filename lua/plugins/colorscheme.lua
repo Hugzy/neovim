@@ -1,4 +1,6 @@
 return {
+
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
@@ -6,7 +8,7 @@ return {
       require("gruvbox").setup({
         contrast = "hard",
         palette_overrides = {
-          dark0_hard = "#000000",
+          dark0_hard = "#151522",
         },
       })
     end,
@@ -16,7 +18,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
