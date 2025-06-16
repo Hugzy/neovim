@@ -1,15 +1,23 @@
 return {
-
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    name = "catppuccin",
+    priority = 1000,
+    "catppuccin/nvim",
+    config = function()
+      require("catppuccin").setup({
+        transparent_background = true, -- disables setting the background color.
+      })
+    end,
+  },
   -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     config = function()
       require("gruvbox").setup({
         contrast = "hard",
-        palette_overrides = {
-          dark0_hard = "#151522",
-        },
+        --palette_overrides = {
+        --dark0_hard = "#151522",
+        --},
       })
     end,
   },
