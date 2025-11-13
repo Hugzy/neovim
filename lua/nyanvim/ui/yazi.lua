@@ -20,6 +20,11 @@ require('lze').load {
         '<cmd>Yazi cwd<CR>',
         desc = 'Open Yazi at cwd',
       },
+      {
+        '<leader>pv',
+        '<cmd>Yazi cwd<CR>',
+        desc = 'Open Yazi at cwd',
+      },
     },
     beforeAll = function()
       vim.g.loaded_netrwPlugin = 1
