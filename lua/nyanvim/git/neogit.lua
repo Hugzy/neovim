@@ -3,6 +3,12 @@ require('lze').load {
     'neogit',
     event = { 'DeferredUIEnter' },
     cmd = { 'Neogit' },
+    load = function(name)
+      require('lzextras').loaders.multi {
+        'plenary.nvim',
+        name,
+      }
+    end,
     keys = {
       { '<leader>gg', '<cmd>Neogit<cr>', desc = 'Neogit' },
       { '<leader>gc', '<cmd>Neogit commit<cr>', desc = 'Neogit commit' },
