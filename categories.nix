@@ -32,7 +32,6 @@ in
         imagemagick
         lazygit
         gh
-        python3Packages.pylatexenc
 
         # lsps
         lua-language-server
@@ -44,8 +43,6 @@ in
         dockerfile-language-server-nodejs
         vscode-langservers-extracted
         harper
-        ltex-ls-plus
-        texlab
         marksman
         typescript-language-server
         rust-analyzer
@@ -206,7 +203,6 @@ in
     python3.libraries = {
       python = py: [
         py.debugpy
-        py.pylatexenc
       ];
     };
 

@@ -57,25 +57,6 @@ servers.harper_ls = {
   filetypes = { 'markdown', 'gitcommit', 'typst', 'html', 'text' },
 }
 
-servers.ltex_plus = {
-  filetypes = {
-    'bib',
-    'org',
-    'plaintex',
-    'rst',
-    'rnoweb',
-    'tex',
-    'pandoc',
-    'quarto',
-    'rmd',
-    'context',
-  },
-  settings = {
-    check_frequency = 'save',
-  },
-}
-
-servers.texlab = {}
 
 servers.marksman = {}
 
