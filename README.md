@@ -95,8 +95,8 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - Enhanced file navigation with [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) and [Grapple.nvim](https://github.com/cbochs/grapple.nvim).
 - Visualized indent guides with [mini.indentscope](https://github.com/echasnovski/mini.indentscope).
 - A sleek dashboard setup using [Snacks dashboard](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md).
-- Support for literate programming with [iron.nvim](https://github.com/Vigemus/iron.nvim) and [neopyter](https://github.com/SUSTech-data/neopyter).
-- Advanced note-taking capabilities with [obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim/) and [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim).
+- Support for literate programming with [iron.nvim](https://github.com/Vigemus/iron.nvim).
+- Advanced note-taking capabilities with [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim).
 - Explore even more features in `categories.nix` and the `lua/nyanvim/` folder.
 
 ## Manual Installation

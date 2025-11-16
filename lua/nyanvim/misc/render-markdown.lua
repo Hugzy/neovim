@@ -11,7 +11,7 @@ require('lze').load {
     ft = { 'markdown', 'quarto' },
     after = function(_)
       require('render-markdown').setup {
-        preset = 'obsidian',
+        preset = 'lazy',
         render_modes = true,
         heading = {
           icons = {

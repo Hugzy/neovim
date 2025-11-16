@@ -20,10 +20,6 @@
       url = "github:AbaoFromCUG/websocket.nvim";
       flake = false;
     };
-    plugins-neopyter = {
-      url = "github:SUSTech-data/neopyter";
-      flake = false;
-    };
     plugins-possession-nvim = {
       url = "github:jedrzejboczar/possession.nvim";
       flake = false;
@@ -50,10 +46,6 @@
     };
     plugins-maximize-nvim = {
       url = "github:declancm/maximize.nvim";
-      flake = false;
-    };
-    plugins-obsidian-nvim = {
-      url = "github:obsidian-nvim/obsidian.nvim";
       flake = false;
     };
   };
