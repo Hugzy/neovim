@@ -59,9 +59,6 @@ require('rose-pine').setup {
       bg = 'NONE',
       italic = true,
     },
-    CmpItemKindCopilot = {
-      fg = 'pine',
-    },
     TelescopeBorder = {
       fg = 'overlay',
       bg = 'overlay',

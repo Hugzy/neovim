@@ -13,7 +13,6 @@ require('lze').load {
         'lazydev.nvim',
         'neopyter',
         'mini.snippets',
-        'blink-cmp-avante',
       }
     end,
     after = function(_)
@@ -101,7 +100,6 @@ require('lze').load {
         },
         sources = {
           default = {
-            'avante',
             'lazydev',
             'neopyter',
             'lsp',
@@ -123,10 +121,6 @@ require('lze').load {
             neopyter = {
               name = 'Neopyter',
               module = 'neopyter.blink',
-            },
-            avante = {
-              module = 'blink-cmp-avante',
-              name = 'Avante',
             },
           },
         },

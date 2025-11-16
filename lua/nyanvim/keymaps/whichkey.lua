@@ -15,8 +15,6 @@ require('lze').load {
       local wk = require 'which-key'
       wk.setup { preset = 'helix' }
       wk.add {
-        { '<Leader>a', group = '+Avante' },
-        { '<leader>c', group = '+ChatGPT' },
         { '<leader>d', group = '+DAP' },
         { '<leader>f', group = '+File search' },
         { '<leader>g', group = '+Git' },
@@ -35,8 +33,6 @@ require('lze').load {
         { '<leader>u', group = '+Misc.' },
         { '<leader>x', group = '+Trouble' },
         { '<leader>z', group = '+Zen' },
-        { '<leader>cd', desc = 'Diagnostics gpt' },
-        { '<leader>cs', desc = 'Diagnostics search' },
         { '<leader>[', group = '+prev' },
         { '<leader>]', group = '+next' },
       }

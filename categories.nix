@@ -117,7 +117,6 @@ in
         blink-cmp
         mini-snippets
         blink-compat
-        blink-cmp-avante
         friendly-snippets
         lazydev-nvim
         lspsaga-nvim
@@ -152,11 +151,7 @@ in
         treesj
         nvim-autopairs
         iron-nvim
-        copilot-lua
         neogen
-        avante-nvim
-        ChatGPT-nvim
-        wtf-nvim
         nvim-dap
         nvim-dap-ui
         nvim-dap-python

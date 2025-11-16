@@ -40,7 +40,6 @@ require('catppuccin').setup {
       TreesitterContextLineNumber = { bg = colors.mantle },
       TreesitterContextBottom = { style = {} },
       TreesitterContextLineNumberBottom = { style = {} },
-      CmpItemKindCopilot = { fg = colors.teal },
       ['@comment.note'] = { link = 'Comment' },
       ['@comment.todo'] = { link = 'Comment' },
       ['@comment.hint'] = { link = 'Comment' },
@@ -52,10 +51,6 @@ require('catppuccin').setup {
       MarkSignHL = { bg = colors.base, fg = colors.mauve },
       MarkSignNumHL = { bg = colors.base, fg = colors.mauve },
       MarkVirtTextHL = { bg = colors.base, fg = colors.mauve },
-      CopilotSuggestion = {
-        fg = darken(colors.teal, 0.5),
-        italic = true,
-      },
       IlluminatedWordText = { bg = colors.surface0, underline = true },
       IlluminatedWordRead = { bg = colors.surface0, underline = true },
       IlluminatedWordWrite = {
@@ -129,7 +124,6 @@ require('catppuccin').setup {
   integrations = {
     blink_cmp = true,
     colorful_winsep = { enabled = true, color = 'mauve' },
-    copilot_vim = true,
     dap = true,
     dap_ui = true,
     diffview = true,

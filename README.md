@@ -63,8 +63,8 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 | :--------------------------------------------: |
 |         ![editor](./assets/editor.png)         |
 
-|     _Autocompletions_ (blink.cmp + copilot)      |
-| :----------------------------------------------: |
+|     _Autocompletions_ (blink.cmp)      |
+| :-------------------------------------: |
 | ![autocompletions](./assets/autocompletions.png) |
 
 |     _Git_ (Lazygit)      |
@@ -93,7 +93,6 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - Snippet management using [mini.snippets](https://github.com/echasnovski/mini.snippets) and [friendly-snippets](https://github.com/rafamadriz/friendly-snippets).
 - Efficient file searching and fuzzy finding with [Snacks pickers](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md).
 - Enhanced file navigation with [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) and [Grapple.nvim](https://github.com/cbochs/grapple.nvim).
-- AI-powered features enabled by [Avante.nvim](https://github.com/yetone/avante.nvim), [copilot.lua](https://github.com/zbirenbaum/copilot.lua), and [blink-copilot](https://github.com/fang2hou/blink-copilot).
 - Visualized indent guides with [mini.indentscope](https://github.com/echasnovski/mini.indentscope).
 - A sleek dashboard setup using [Snacks dashboard](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md).
 - Support for literate programming with [iron.nvim](https://github.com/Vigemus/iron.nvim) and [neopyter](https://github.com/SUSTech-data/neopyter).

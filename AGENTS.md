@@ -17,6 +17,6 @@
 
 ## Notes
 
-- No Cursor or Copilot rules found.
+- No AI assistant rules found.
 - For new languages or tools, extend linter/formatter configs in `lua/nyanvim/lsps/`.
 - See README.md for more usage details.
