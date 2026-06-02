@@ -5,19 +5,20 @@ require('lze').load {
     'nvim-lspconfig',
     event = { 'BufReadPre', 'BufNewFile' },
     after = function(_)
-      local lspconfig = require 'lspconfig'
-      lspconfig.util.default_config =
-        vim.tbl_extend('force', lspconfig.util.default_config, {
-          capabilities = require('blink.cmp').get_lsp_capabilities({}, true),
-          on_attach = function(_, bufnr)
-            vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
-              require('conform').format { async = true }
-            end, { desc = 'Format current buffer using conform' })
-          end,
-        })
+      vim.lsp.config('*', {
+        capabilities = require('blink.cmp').get_lsp_capabilities({}, true),
+        on_attach = function(_, bufnr)
+          vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+            require('conform').format { async = true }
+          end, { desc = 'Format current buffer using conform' })
+        end,
+      })
       for server_name, cfg in pairs(servers) do
-        lspconfig[server_name].setup(cfg or {})
+        if next(cfg) ~= nil then
+          vim.lsp.config(server_name, cfg)
+        end
       end
+      vim.lsp.enable(vim.tbl_keys(servers))
     end,
   },
   {

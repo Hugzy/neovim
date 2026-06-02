@@ -37,6 +37,15 @@ require('lze').load {
         'promise-async',
         name,
       }
+      -- async.nvim (pulled in transitively at startup) also ships lua/async.lua and
+      -- shadows promise-async's, which nvim-ufo requires and calls as async(). Force
+      -- promise-async's callable async to win before ufo's modules require it.
+      for _, p in ipairs(vim.api.nvim_get_runtime_file('lua/async.lua', true)) do
+        if p:find('promise-async', 1, true) then
+          package.loaded['async'] = dofile(p)
+          break
+        end
+      end
     end,
     keys = {
       {

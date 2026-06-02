@@ -73,7 +73,8 @@ servers.rust_analyzer = {}
 
 servers.svelte = {}
 
-servers.tailwindcss = {}
+-- FIXME: disabled in categories.nix until nodejs_24 is available on nixpkgs
+-- servers.tailwindcss = {}
 
 servers.tinymist = {}
 
