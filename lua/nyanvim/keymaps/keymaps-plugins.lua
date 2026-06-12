@@ -17,7 +17,7 @@ end
 map(
   'n',
   'gr',
-  '<cmd>lua vim.lsp.buf.references()<cr>',
+  '<cmd>lua Snacks.picker.lsp_references()<cr>',
   { desc = 'Goto [R]eferences' }
 )
 map(
