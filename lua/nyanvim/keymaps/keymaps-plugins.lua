@@ -8,11 +8,17 @@ local function map(mode, key, action, opts)
 end
 
 -- LSP (keymaps)
+-- Remove Neovim's default gr* LSP mappings. We bind all of these elsewhere,
+-- and leaving them makes `gr` a which-key group node instead of showing the
+-- Goto References command.
+for _, lhs in ipairs { 'gra', 'gri', 'grn', 'grr', 'grt', 'grx' } do
+  pcall(vim.keymap.del, 'n', lhs)
+end
 map(
   'n',
   'gr',
   '<cmd>lua vim.lsp.buf.references()<cr>',
-  { desc = 'Goto [R]eferences', nowait = true }
+  { desc = 'Goto [R]eferences' }
 )
 map(
   'n',
