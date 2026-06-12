@@ -12,7 +12,7 @@ map(
   'n',
   'gr',
   '<cmd>lua vim.lsp.buf.references()<cr>',
-  { desc = 'Goto [R]eferences' }
+  { desc = 'Goto [R]eferences', nowait = true }
 )
 map(
   'n',
