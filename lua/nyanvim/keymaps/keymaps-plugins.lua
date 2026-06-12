@@ -10,9 +10,9 @@ end
 -- LSP (keymaps)
 map(
   'n',
-  'gD',
+  'gr',
   '<cmd>lua vim.lsp.buf.references()<cr>',
-  { desc = '[G]oto [D]eclaration' }
+  { desc = 'Goto [R]eferences' }
 )
 map(
   'n',
