@@ -82,4 +82,12 @@ servers.cssls = {}
 
 servers.html = {}
 
+servers.zls = {
+  settings = {
+    zls = {
+      enable_build_on_save = true,
+    },
+  },
+}
+
 return servers

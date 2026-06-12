@@ -50,6 +50,8 @@ in
         # FIXME: Disable this until nodejs_24 binary is available on nixpkgs
         # tailwindcss-language-server
         tinymist
+        zls
+        zig
 
         # formatters
         stylua

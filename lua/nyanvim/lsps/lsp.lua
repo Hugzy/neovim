@@ -7,10 +7,13 @@ require('lze').load {
     after = function(_)
       vim.lsp.config('*', {
         capabilities = require('blink.cmp').get_lsp_capabilities({}, true),
-        on_attach = function(_, bufnr)
+        on_attach = function(client, bufnr)
           vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
             require('conform').format { async = true }
           end, { desc = 'Format current buffer using conform' })
+          if client.name == 'zls' then
+            vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+          end
         end,
       })
       for server_name, cfg in pairs(servers) do
