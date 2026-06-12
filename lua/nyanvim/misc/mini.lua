@@ -54,6 +54,7 @@ require('lze').load {
       require('mini.operators').setup {
         exchange = { prefix = 'ge' },
         sort = { prefix = 'gS' },
+        replace = { prefix = 'gR' },
       }
     end,
   },
