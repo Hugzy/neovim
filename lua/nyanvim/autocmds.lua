@@ -82,3 +82,12 @@ vim.api.nvim_create_autocmd({ 'WinEnter', 'WinNew' }, {
     end
   end,
 })
+
+-- mini.animate disrupts the snacks picker input (cursor jumps to the start
+-- while typing), so disable animations in picker buffers only.
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'snacks_picker_*',
+  callback = function()
+    vim.b.minianimate_disable = true
+  end,
+})
